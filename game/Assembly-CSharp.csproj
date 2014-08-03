@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Floor.cs" />
      <Compile Include="Assets\Scripts\GameMgrTemp.cs" />
      <Compile Include="Assets\Scripts\Janken.cs" />
+     <Compile Include="Assets\Scripts\Life.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\Result.cs" />
      <Compile Include="Assets\Scripts\ResultTemp.cs" />
