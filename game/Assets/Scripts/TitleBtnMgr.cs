@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TitleBtnMgr : MonoBehaviour {
 
+	private bool flag = false;
+
     void Start()
     {
 
@@ -12,31 +14,10 @@ public class TitleBtnMgr : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!flag && Input.GetMouseButtonDown(0))
         {
-
-            Vector3 aTapPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Collider2D aCollider2d = Physics2D.OverlapPoint(aTapPoint);
-
-            if (aCollider2d)
-            {
-                GameObject obj = aCollider2d.transform.gameObject;
-                if (obj.name == "Start_temp")
-                {
-                    //チェンジボタン1
-                    Debug.Log("bS");
-
-                    CameraFade.StartAlphaFade(Color.white, true, 1f, 1f);
-                    CameraFade.StartAlphaFade(Color.white, false, 1f, 1f,()
-                        => { Application.LoadLevel("GameMgrTemp"); });
-                }
-                if (obj.name == "End_temp")
-                {
-                    //チェンジボタン2
-                    Debug.Log("bE");
-                }
-
-            }
+			CameraFade.StartAlphaFade(Color.black, false, 1f, 1f,() => { Application.LoadLevel("GameMain"); });
+			flag = true;
         }
     }
 }
