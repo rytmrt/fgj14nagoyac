@@ -14,7 +14,7 @@ public class GameMgrTemp : MonoBehaviour {
         if (Input.GetMouseButtonDown(0)) {
             CameraFade.StartAlphaFade(Color.white, true, 1f, 1f);
             CameraFade.StartAlphaFade(Color.white, false, 1f, 1f, ()
-                => { Application.LoadLevel("ResultTemp"); });
+                => { Application.LoadLevel("ResultMgrTemp"); });
         }
 	}
 }

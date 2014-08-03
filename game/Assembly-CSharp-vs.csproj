@@ -48,17 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AspectCamera.cs" />
      <Compile Include="Assets\Scripts\BtnMgr.cs" />
-     <Compile Include="Assets\Scripts\CameraFade.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
-     <Compile Include="Assets\Scripts\FeildIn.cs" />
-     <Compile Include="Assets\Scripts\FeildOut.cs" />
      <Compile Include="Assets\Scripts\GameMgrTemp.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\ResultTemp.cs" />
      <Compile Include="Assets\Scripts\Runchan.cs" />
-     <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\SceneMgr.cs" />
-     <Compile Include="Assets\Scripts\SceneMgr1.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\SpriteScript.cs" />
      <Compile Include="Assets\Scripts\TitleBtnMgr.cs" />
